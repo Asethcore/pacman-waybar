@@ -60,7 +60,7 @@
         },
         {
           "active": false,
-          "command": "swaync-client -t",
+          "command": "systemctl poweroff",
           "label": "",
           "type": "toggle"
         }
