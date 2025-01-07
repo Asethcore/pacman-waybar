@@ -12,3 +12,20 @@ yay -S bluetui rofi-lbonn-wayland-git
 ## Installation
 First clone this repo in your system
 ```
+git clone https://github.com/Asethcore/pacman-waybar.git ~/pacman-waybar
+```
+then time to remove some french language packages,
+```
+rm -r ~/.config/waybar
+rm -r ~/.config/swaync
+```
+then the last part
+```
+cd pacman-waybar
+mv swaync ~/.config/
+mv waybar ~/.config/
+```
+
+## P.S.
+What i used for my base config for waybar: https://github.com/bibjaw99/workstation
+for swaync config i stole it from: https://github.com/kurtnettle/dotfiles/tree/a34af4152f579d705772273ae2fd45040c1b45a7/swaync
