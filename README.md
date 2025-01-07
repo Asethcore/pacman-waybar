@@ -27,5 +27,5 @@ mv waybar ~/.config/
 ```
 
 ## P.S.
-What i used for my base config for waybar: https://github.com/bibjaw99/workstation
-for swaync config i stole it from: https://github.com/kurtnettle/dotfiles/tree/a34af4152f579d705772273ae2fd45040c1b45a7/swaync
+* What i used for my base config for waybar: https://github.com/bibjaw99/workstation
+* for swaync config i stole it from: https://github.com/kurtnettle/dotfiles/tree/a34af4152f579d705772273ae2fd45040c1b45a7/swaync
