@@ -24,6 +24,7 @@ then the last part
 cd pacman-waybar
 mv swaync ~/.config/
 mv waybar ~/.config/
+chmod +x ~/.config/waybar/scripts
 ```
 
 ## P.S.
