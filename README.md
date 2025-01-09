@@ -4,7 +4,7 @@ This is what i meant when i said it has pacman
 
 ## Dependecies
 ```
-sudo pacman -S bluez-utils brightnessctl hyprlock pipewire pipewire-pulse python ttf-jetbrains-mono-nerd wireplumber
+sudo pacman -S bluez-utils brightnessctl hyprlock pipewire pipewire-pulse python ttf-jetbrains-mono-nerd wireplumber wlogout
 ```
 ```
 yay -S bluetui rofi-lbonn-wayland-git
