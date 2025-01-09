@@ -37,7 +37,7 @@
   "custom/rofi": {
 		"format": "<span color='#fbf1c7' >󰮯</span>",
 		"on-click": "rofi -show drun",
-    "on-click-right": "~/.config/waybar/scripts/power-menu.sh",
+    "on-click-right": "wlogout",
     "escape" : true,
     "tooltip" : false
 	},
