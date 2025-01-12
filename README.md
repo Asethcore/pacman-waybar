@@ -18,6 +18,8 @@ then time to remove some french language packages,
 ```
 rm -r ~/.config/waybar
 rm -r ~/.config/swaync
+(if ye want to use rofi instead of wlogout)
+rm -r ~/.config/rofi
 ```
 then the last part
 ```
@@ -25,6 +27,7 @@ cd pacman-waybar
 mv swaync ~/.config/
 mv waybar ~/.config/
 mv wlogout ~/.config/
+mv rofi ~/.config
 chmod +x ~/.config/waybar/scripts
 ```
 
