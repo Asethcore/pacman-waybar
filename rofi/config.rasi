@@ -1,25 +1,9 @@
+/*****----- Configuration -----*****/
 configuration {
-  modi: "drun";
-  font: "JetBrains Mono 18px";
-  show-icons: true;
-  terminal: "kitty";
+	modi:                       "drun";
+  show-icons:                 true;
   icon-theme: "Mkos-Big-Sur-Night";
-  drun-display-format: "{icon} {name}";
-  location: 0;
-  hide-scrollbar: true;
-  disable-history: false;
-  display-drun: "  Applications";
-  display-run: "  Run";
-  display-calc: "  Calculator";
-  display-emoji: "  Emojis";
-  sidebar-mode: false;
-  timeout {
-      action: "kb-cancel";
-      delay:  0;
-  }
-  filebrowser {
-      directories-first: true;
-      sorting-method:    "name";
-  }
+	drun-display-format:        "{name}";
 }
-@theme "gruvbox"
+
+@theme "~/.config/rofi/gruvbox.rasi"

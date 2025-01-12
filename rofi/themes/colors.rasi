@@ -1,8 +1,0 @@
- * {
-    background: #282828;
-    prompt: #32302f;
-    border: #665c54;
-    text: #fbf1c7;
-    stext: #7c6f64;
-    select: #32302f;
- }
