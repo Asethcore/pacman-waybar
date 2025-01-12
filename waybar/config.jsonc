@@ -1,8 +1,10 @@
 {
   "layer": "top",
+  "position": "bottom",
   "height": 35,
+  "width": 1500,
   "spacing": 5,
-  "margin-top" :5,
+  "margin-bottom" :5,
   "margin-right" :8,
   "margin-left" :8,
 
@@ -37,7 +39,7 @@
   "custom/rofi": {
 		"format": "<span color='#fbf1c7' >󰮯</span>",
 		"on-click": "rofi -show drun",
-    "on-click-right": "wlogout",
+    "on-click-right": "sh ~/.config/waybar/scripts/power-menu.sh",
     "escape" : true,
     "tooltip" : false
 	},
