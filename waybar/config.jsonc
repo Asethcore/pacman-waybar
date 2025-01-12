@@ -13,12 +13,13 @@
     "hyprland/workspaces",
     "custom/paddc",
     "hyprland/window",
+    "custom/paddc",
+    "tray",
   ],
 
   "modules-center": ["mpris"],
 
   "modules-right": [
-    "tray",
     "pulseaudio",
     "custom/backlight",
     "hyprland/language",
