@@ -1,12 +1,11 @@
 {
   "layer": "top",
-  "position": "bottom",
+  "position": "top",
   "height": 35,
-  "width": 1500,
   "spacing": 5,
-  "margin-bottom" :5,
-  "margin-right" :8,
-  "margin-left" :8,
+  "margin-top" :5,
+  "margin-right" :5,
+  "margin-left" :5,
 
   "modules-left": [
     "custom/rofi",
@@ -24,6 +23,7 @@
     "custom/backlight",
     "hyprland/language",
     "custom/paddc",
+    "custom/paddc",
     "bluetooth",
     // "custom/paddc",
     "battery",
@@ -35,6 +35,7 @@
     "clock#date",
     "custom/paddc",
     "clock#time",
+    "custom/paddc",
   ],
 
   "custom/rofi": {
@@ -155,8 +156,8 @@
   },
 
   "mpris": {
-    "format": "<span color='#cc241d'> 󰎇  </span>  {artist} - {title}  ",
-    "max-length": 40,
+    "format": "<span color='#cc241d'>󰎇  </span>  {artist}  {title}",
+    "max-length": 30,
   },
 
   "custom/wifi": {
@@ -196,17 +197,7 @@
   "custom/notification": {
     "tooltip": false,
     "rotate": 0,
-    "format": "{icon}",
-    "format-icons": {
-      "notification": "󰅸 ",
-      "none": "󰂜 ",
-      "dnd-notification": "󰅸 ",
-      "dnd-none": "󱏨 ",
-      "inhibited-notification": "󰅸 ",
-      "inhibited-none": "󰂜 ",
-      "dnd-inhibited-notification": "󰅸 ",
-      "dnd-inhibited-none": "󱏨 "
-    },
+    "format": " ",
     "return-type": "json",
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",

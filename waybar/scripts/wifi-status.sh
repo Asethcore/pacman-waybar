@@ -68,7 +68,7 @@ fi
 wifi_status=$(nmcli radio wifi)
 
 if [ "$wifi_status" = "disabled" ]; then
-  echo "{\"text\": \"󰤮\", \"tooltip\": \"Wi-Fi Disabled\"}"
+  echo "{\"text\": \"󰤮 \", \"tooltip\": \"Wi-Fi Disabled\"}"
   exit 0
 fi
 
@@ -161,15 +161,15 @@ fi
 
 # Determine Wi-Fi icon based on signal strength
 if [ "$signal" -ge 80 ]; then
-  icon="󰖩  " # Strong signal
+  icon="<span color='#b16286' >󰖩  </span>" # Strong signal
 elif [ "$signal" -ge 60 ]; then
-  icon="󰖩  " # Good signal
+  icon="<span color='#b16286' >󰖩  </span>" # Good signal
 elif [ "$signal" -ge 40 ]; then
-  icon="󰖩  " # Weak signal
+  icon="<span color='#b16286' >󰖩  </span>" # Weak signal
 elif [ "$signal" -ge 20 ]; then
-  icon="󰖩  " # Very weak signal
+  icon="<span color='#b16286' >󰖩  </span>" # Very weak signal
 else
-  icon="󰖪 " # No signal
+  icon="<span color='#b16286' >󰖪  </span>" # No signal
 fi
 
 # Module and tooltip
