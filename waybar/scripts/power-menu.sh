@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-config="$HOME/.config/rofi/powermenu.rasi"
+config="$HOME/.config/rofi/config.rasi"
 
-actions=$(echo -e "  Lock\n  Shutdown\n  Reboot\n$(printf '\u200A')  Suspend\n  Hibernate\n  Logout")
+actions=$(echo -e "  Lock\n  Shutdown\n  Reboot\n  Suspend\n  Hibernate\n  Logout")
 
 # Display logout menu
 selected_option=$(echo -e "$actions" | rofi -dmenu -i -config "${config}" || pkill -x rofi)

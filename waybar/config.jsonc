@@ -16,7 +16,7 @@
     "tray",
   ],
 
-  "modules-center": ["mpris"],
+  "modules-center": ["custom/player"],
 
   "modules-right": [
     "pulseaudio",
@@ -112,11 +112,10 @@
     "format-critical": "<span color='#cc241d' > {icon}</span>{capacity}%",
     "format-warning": "<span color='#d8a657' > {icon}</span>{capacity}%",
     "format-full": "<span color='#8ec07c' > {icon}</span>{capacity}%",
-    "format-charging": "<span color='#8ec07c' > 󰂅 </span>{capacity}%",
-    "format-charging-warning": "<span color='#d8a657' > 󰢝 </span>{capacity}%",
-    "format-charging-critical": "<span color='#cc241d' > 󰢜 </span>{capacity}%",
+    "format-charging": "<span color='#8ec07c' >  󱐌 </span>{capacity}%",
+    "format-charging-warning": "<span color='#d8a657' >  󱐌 </span>{capacity}%",
+    "format-charging-critical": "<span color='#cc241d' >  󱐌 </span>{capacity}%",
     "format-plugged": "<span color='#8ec07c' > 󰂅 </span>{capacity}%",
-    "format-alt": "<span color='#8ec07c' > 󱧥 </span>{time}",
     "tooltip": false
   },
 
@@ -153,11 +152,6 @@
   "hyprland/language": {
     "format": "{}",
     "format-en": "US",
-  },
-
-  "mpris": {
-    "format": "<span color='#cc241d'>󰎇  </span>  {artist}  {title}",
-    "max-length": 30,
   },
 
   "custom/wifi": {
@@ -197,12 +191,28 @@
   "custom/notification": {
     "tooltip": false,
     "rotate": 0,
-    "format": " ",
+    "format": "{icon}",
+    "format-icons" : {
+      "notification": "󱅫 ",
+      "none": " ",
+      "dnd-notification": "󰂛 ",
+      "dnd-none": "󰂛 ",
+      "inhibited-notification": " ",
+      "inhibited-none": " ",
+      "dnd-inhibited-notification": "󰂛 ",
+      "dnd-inhibited-none": "󰂛 ",
+    },
     "return-type": "json",
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
     "on-click-right": "swaync-client -d -sw",
     "on-click": "swaync-client -t -sw",
     "escape": true
+  },
+
+  "custom/player": {
+    "exec": "~/.config/waybar/scripts/player.sh",
+    "format": "{}",
+    "interval": 1,
   }
 }

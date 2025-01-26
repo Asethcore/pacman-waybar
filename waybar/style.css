@@ -247,19 +247,18 @@ window#waybar {
   background: #3c3835;
 }
 
-#mpris {
+#custom-notification {
+  color: #fbf1c7;
+  font-size: 14px;
+  background: #3c3835;
+  padding: 2px 2px;
+}
+
+#custom-player {
   color: #282828;
   border: 2px solid #3c3835;
   border-radius: 21px;
   background: #fbf1c7;
   padding-left: 9px;
   padding-right: 9px;
-  margin: 1px 1px; 
-}
-
-#custom-notification {
-  color: #fbf1c7;
-  font-size: 14px;
-  background: #3c3835;
-  padding: 2px 2px;
 }
