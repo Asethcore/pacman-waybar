@@ -20,7 +20,14 @@ window#waybar {
   padding-right: 9px;
   padding-left: 5px;
   margin: 0;
-  border-radius: 21px;
+  border-radius: 19px;
+}
+
+tooltip {
+  background: rgba(255, 244, 210, 0.8);
+  color: #3c3835;
+  border: 2px solid #3c3835;
+  border-radius: 5px;
 }
 
 .modules-left {

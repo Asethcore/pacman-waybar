@@ -7,5 +7,5 @@ if [ "$player_status" = "Playing" ]; then
 elif [ "$player_status" = "Paused" ]; then
     echo "${icon}  $(playerctl metadata artist) - $(playerctl metadata title)"
 else
-    echo "${icon}  -  offline"
+    echo "${icon}  Nothing Playing yet."
 fi
